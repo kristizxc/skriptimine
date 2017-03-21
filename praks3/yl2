@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# käsurea parameetrite kasutamine
+#
+echo '$0 = '$0
+echo '$1 = '$1
+echo '$2 = '$2
+echo "=============="
+cat fail 2>> /dev/null
+echo '$? = '$?
+echo '$# = '$#
+
