@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# täisnurkse kolmnurga kolmanda külje arvutamine
+#
+# kasutame kasutaja sisendit
+# kasutame expr käsu võimalused
+# uurime kuidas kasutada $((avaldis)) võimalused
+# uurime bc käsu tööd
+#
+echo -n "Sisesta a kylg: "
+read a
+echo -n "Sisesta b kylg: "
+read b
+#
+echo "a = $a"
+echo "b = $b"
+# arvutame
+# c = ruutjuur(a_ruudus + b_ruudus)
+# a_ruut=`expr $a \* $a`
+# b_ruut=`expr $b \* $b`
+# ab=`expr $a_ruut + $b_ruut`
+# a_ruut=$(($a * $a))
+# echo "a ruudus = $a_ruut"
+# b_ruut=$(($b * $b))
+# echo "b ruudus = $b_ruut"
+# ab=$(($a_ruut + $b_ruut))
+# komadega numbrite korral
+echo -n "c = "
+echo "scale=2;sqrt($a^2 + $b^2)" | bc
+# arvutame ruutjuur
+# echo -n "c = "
+# echo "scale=2;sqrt($ab)" | bc
