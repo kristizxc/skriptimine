@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# kujundi trykkimine
+#
+for((r=1; r<6; r++))
+do
+	# o koosnev kolmnurk
+	for((v=; v<=(5-$r); v++))
+	do
+		echo -n " "
+	done
+	# * koosnev kolnurk
+	for((v=1; v<=$r; v++))
+	do
+		echo -n "* "
+	done
+	# * koosnev kolmnurk
+	for((v=1; v<$r; v++))
+	do
+		echo -n "* "
+	done
+	echo # reavahetus
+done
