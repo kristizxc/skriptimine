@@ -1,0 +1,17 @@
+#!/bin/bash
+# 
+# kolmnurga pindala arvutamine Heroni valemiga
+#
+echo -n "a = "
+read a
+echo -n "b = "
+read b
+echo -n "c = "
+read c
+#
+p=`echo "scale=2;($a + $b + $c) / 2" | bc`
+echo -n "Pindala = "
+echo "scale=2;sqrt($p * ($p - $a) * ($p - $b) * ($p - $c))" | bc
+echo "Pindala = $s"
+#
+# skripti lopp
