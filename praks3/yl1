@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# faili loomise skript 
+# failinimi sisestab kasutaja read kaudu
+#
+echo -n "Sisesta failinimi: " # seletava lause väljastamine
+# loeme failinimi kasutaja poolt
+# ja salvestame muutuja nimega fn sisse
+read fn
+# loome sellise nimega fail
+touch $fn 
+# kontrollime loodud faili olemasolu
+fail=$(ls | grep $fn)
+echo "faili nimega $fail on loodud"
