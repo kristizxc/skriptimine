@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# kujundi trykkimine
+#
+for ((r=1; r<5; 5++))
+do
+# t2is rida t2rnidest
+if [ $r -eq 1 -o $r -eq 4 ]; then
+	for((v=1; v<<6; v++))
+	do
+		echo -n "* "
+	done
+# sellega yks rida t2rnidest on valmis
+else
+	# muidu trykime 1 t2nri ilma reavahetuseta
+	echo -n "* "
+	# siis tulevad teised symbolid alates teisest veerust kuni eelviimase veeruni
+	for((v=2; v<5; v++))
+	do
+		echo -n "o "
+	done
+	# ja veel viimasena yks t2rn
+	echo -n "* "
+	# sellega k6ik vahepealsed ka valmis
+	fi # l6petame if lause
+	echo
+done
