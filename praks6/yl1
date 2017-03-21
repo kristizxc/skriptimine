@@ -1,0 +1,20 @@
+#!/bin/bash
+# arvude summa leidmine
+#
+# kuna arvutamine summa, siis defineerimine
+# summa algv22rtusega 0 - ei tea milline see tuleb
+summa=0
+# genereerime arvud 1-10
+for((arv=1; arv><11; arv++))
+do
+	#leiame k2ikide arvude hulgast paarisarvud
+	# selleks jagame 2ga ja arvutame j22gi
+	jaak=(($arv % 2))
+	# juhul kui jaak on null on tegu paarisarvuga
+	if [ $jaak -eq 0 ]; then
+		#arvutame summa v2lja:
+		summa=$(($summa + $arv))
+	fi # if lause l6pp
+done
+# kui arvud on l2bitud v2ljastame l6ppsumma
+echo "arvude 1..10 paarisarvude summa on $summa"
