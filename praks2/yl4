@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# kasutajad serveris, kelle nimed on .-ga kujul perenimi.eesnimi
+#
+echo "Kasutajad:"
+who | awk '{print $1}' | grep "\." | awk -F "." '{print $2 "." $1}'
+
