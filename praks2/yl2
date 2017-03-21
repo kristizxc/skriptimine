@@ -1,0 +1,14 @@
+#!/bin/bash
+# 
+# ajaväärtuste väljastamine
+#
+# kellaaeg
+echo -n "Time: "
+echo `date +"%H:%M"`
+# kuupäev
+echo -n "Date: "
+echo ` date +"%d.%m.%Y"`
+# nädalapäev
+echo -n "Today is "
+echo `date +"%A"`
+
