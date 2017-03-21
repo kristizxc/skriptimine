@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#  systeemi t88aja v2ljastamine
+#
+#
+echo -n "System "
+echo -n `hostname`
+echo -n " "
+echo `uptime -p`
+
